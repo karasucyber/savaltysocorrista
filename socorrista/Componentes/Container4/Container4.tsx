@@ -1,14 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, ContainerCenter, ContainerCenterIMG, ContainerLR, ContainerLeft, ContainerRight, ContainerT, Paragrafo, Titulo, TituloSub } from "../Geral/geral/ContainerGeral";
-
+import { BoxVideo, Container, ContainerCenter2, ContainerLR, ContainerLeft, ContainerRight, ContainerT, Paragrafo, Titulo, TituloSub } from "../Geral/geral/ContainerGeral";
+import { useInView } from 'react-intersection-observer';
+import ReactPlayer from 'react-player'; 
 
 const Container4 = () => {
-    return( 
-        <Container>
+    const { ref, inView } = useInView({ threshold: 0.6 });
+    return (
+        <Container style={{ background: "white", }} ref={ref}>
+            
+            <ContainerT>
+                <Titulo style={{ color: "black" }} isVisible={inView}> Nossas ambulâncias !</Titulo>
+            </ContainerT>
 
+        
         </Container>
-
     )
 }
 

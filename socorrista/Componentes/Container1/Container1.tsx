@@ -12,7 +12,7 @@ export default function Container1() {
   return (
     <>
     <Swiper
-        spaceBetween={30}
+        spaceBetween={0}
         pagination={{
           clickable: true,
         }}

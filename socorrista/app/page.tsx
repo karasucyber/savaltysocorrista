@@ -2,6 +2,9 @@
 import styled from "styled-components";
 import Container1 from "@/Componentes/Container1/Container1";
 import Container2 from "@/Componentes/Container2/Container2";
+import Container3 from "@/Componentes/Container3/Container3";
+import Container4 from "@/Componentes/Container4/Container4";
+
 const Body = styled.body({
   width: "100%",
   height: "100%",
@@ -15,7 +18,9 @@ export default function Home() {
   return (
     <Body>
       <Container1/> 
-      <Container2/>    
+      <Container2/>
+      <Container3/>   
+      <Container4/>
     </Body>
   );
 }

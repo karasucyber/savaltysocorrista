@@ -35,7 +35,9 @@ const Container6 = () => {
                     <IoLogoWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "100px", color: "green",}} />
                      <IoLogoWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "100px", color: "green",}} />
                     </Containericons>
-                </ContainerSocial>        
+                    
+                </ContainerSocial>       
+
             </Container2>
         </>
     );

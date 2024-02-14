@@ -54,7 +54,7 @@ const PrevButton = styled.button`
   color: #333; /* Cor do botão, ajuste conforme necessário */
 `;
 
-const companies: any[] = ["playball.png", "playball.png", "playball.png", "playball.png", "playball.png", "playball.png"];
+const companies: any[] = ["playball.png", "playball.png", "playball.png", "playball.png", "playball.png", "playball.png","playball.png", "playball.png", "playball.png", "playball.png", "playball.png", "playball.png"];
 
 const FooterCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -112,12 +112,16 @@ const FooterCarousel = () => {
 };
 
 
-const Container7 = () => {
+const Container8 = () => {
     const { ref, inView } = useInView({ threshold: 0.6 });
     return (
-             <Container style={{ background: "#EE8338", height: "250px" }} ref={ref}/>
+             <Container style={{ background: "#EE8338",}} ref={ref}>
+                <FooterCarousel/>
+
+                
+             </Container>
       
     );
 };
 
-export default Container7;
+export default Container8;

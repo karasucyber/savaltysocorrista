@@ -6,6 +6,7 @@ import Container3 from "@/Componentes/Container3/Container3";
 import Container4 from "@/Componentes/Container4/Container4";
 import Container6 from "@/Componentes/Container6/Container6";
 import Container7 from "@/Componentes/Container7/Container7";
+import Container8 from "@/Componentes/Container8/Container8";
 
 const Body = styled.body({
   width: "100%",
@@ -25,6 +26,7 @@ export default function Home() {
       <Container4/>
       <Container6/>
       <Container7/>
+      <Container8/>
     </Body>
   );
 }

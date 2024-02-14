@@ -2,7 +2,6 @@ import { Container } from '../Geral/geral/ContainerGeral';
 import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
-import Ambulance from "./textures/Material_84_baseColor.png";
 
 interface ModelViewerProps {
   modelPath: string;
@@ -30,7 +29,7 @@ const ModelViewer: React.FC<ModelViewerProps> = ({ modelPath }) => {
 const Container5 = () => {
   return (
     <Container>
-      <ModelViewer modelPath="public/Ambulance.gltf" />
+      <ModelViewer modelPath="scene.gltf" />
     </Container>
   );
 };

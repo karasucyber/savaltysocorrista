@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BoxVideo, Container, ContainerAmbulance, ContainerCenter, ContainerCenter2, ContainerLR, ContainerLeft, ContainerRight, ContainerT, Paragrafo, Titulo, TituloSub } from "../Geral/geral/ContainerGeral";
 import { useInView } from 'react-intersection-observer';
-import ReactPlayer from 'react-player'; 
+import ReactPlayer from 'react-player';
 import Container5 from "../Container5/Container5";
 import { IoLogoWhatsapp } from "react-icons/io";
 

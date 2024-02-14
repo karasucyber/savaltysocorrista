@@ -1,4 +1,4 @@
-import { Container } from '../Geral/geral/ContainerGeral';
+import { Container, ContainerCenter, ContainerCenterIMG } from '../Geral/geral/ContainerGeral';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import { useInView } from 'react-intersection-observer';
@@ -8,6 +8,7 @@ import { BoxVideo, ContainerCenter2, ContainerLR, ContainerLeft, ContainerRight,
 
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
+import Form from './Forms';
 
 const CarouselContainer = styled.div`
   width: 100%;
@@ -16,7 +17,8 @@ const CarouselContainer = styled.div`
   position: relative;
   touch-action: pan-y; /* Permite o movimento de arrastar vertical */
   border-radius: 10px;
-`;
+  background: white;
+  `;
 
 const LogoCarousel = styled.div`
   display: flex;
@@ -116,9 +118,27 @@ const Container8 = () => {
     const { ref, inView } = useInView({ threshold: 0.6 });
     return (
              <Container style={{ background: "#EE8338",}} ref={ref}>
-                <FooterCarousel/>
+<div style={{background: "white", height: "400px", padding: "10px"}}>
+<FooterCarousel/>
 
-                
+</div>
+<ContainerLR ref={ref}>
+                    
+                    <ContainerLeft>
+                        <TituloSub isVisible={inView}> Nossa história </TituloSub>
+                        <ContainerCenterIMG>
+                           <h1> logo </h1>
+                        </ContainerCenterIMG>
+                    </ContainerLeft>
+                    
+                    <ContainerRight>
+                        <ContainerCenterIMG>
+                            <Form></Form>
+
+
+                        </ContainerCenterIMG>
+                    </ContainerRight>
+                </ContainerLR>
              </Container>
       
     );

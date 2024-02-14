@@ -45,12 +45,12 @@ const Form = () => {
     message: ''
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     // Aqui você pode fazer o que quiser com os dados do formulário
     console.log(formData);

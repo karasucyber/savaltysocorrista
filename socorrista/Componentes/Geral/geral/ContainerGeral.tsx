@@ -20,13 +20,25 @@ export const ContainerLR = styled.div({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    height : "1500px",
+    height : "500px",
     marginBottom: "100px",
     '@media only screen and (max-width: 780px)':{
         flexDirection: "column",
         width: "100%",
         height: "100%",
     }
+})
+
+export const ContainerAmbulance = styled.div({
+    width: "50%", 
+    height: "100%", 
+    marginBottom: "200px",
+
+    '@media only screen and (max-width: 780px)':{
+        width: "100%",
+        height: "100%",    
+    }
+
 })
 
 export const BoxVideo = styled.div({
@@ -86,7 +98,7 @@ export const ContainerCenterIMG = styled.div({
 
 export const ContainerLeft = styled.div({
     width: "50%", 
-    height: "250px", 
+    height: "100%", 
     '@media only screen and (max-width: 780px)':{
         width: "200px",
         height: "200px",    
@@ -112,7 +124,6 @@ export const ContainerT = styled.div({
     display: "flex",
     justifyContent: "center",    
     width: "100%",
-    marginBottom: "10px",
 })
 
 export const Titulo = styled.h1<TituloProps>`
@@ -142,4 +153,52 @@ export const Paragrafo = styled.p({
         fontSize: "10px",
     }
 });
+
+
+export const ContainerImg = styled.div({
+
+ columnCount: "4",
+ columnGap: "10px"
+
+});
+
+export const ContainerIMG1 = styled.img({ 
+    backgroundColor: '#ccc',
+    width: "100%",
+    borderRadius: "10px",
+    marginBottom: "10px",
+})
+
+
+export const Container2 = styled.div({
+    width: "100%",
+    height: "1750px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    '@media only screen and (max-width: 780px)': {
+        width: "100%",
+        height: "1200px",
+        justifyContent: "center",
+    }
+});
+
+export const ContainerSocial = styled.div({
+    width: "50%",
+    padding: "50px",
+    background: "white",
+    justifyContent: "center",
+    borderRadius: "50px",
+});
+
+export const Containericons = styled.div({
+    padding: "10px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "50px"
+});
+
+
+
 

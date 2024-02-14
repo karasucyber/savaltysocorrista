@@ -15,18 +15,18 @@ const Container3 = () => {
                     <BoxVideo>
                     <TituloSub isVisible={inView}> Primeiro Socorros. </TituloSub>
                     <ContainerCenter2>
-                    <ReactPlayer url="https://www.youtube.com/watch?v=3fDlLEbVJWs" width="95%" height="95%" />    
+                    <ReactPlayer url="https://www.youtube.com/watch?v=E0iYzxiWxtA" width="95%" height="95%" />    
                         </ContainerCenter2>
                     </BoxVideo>
                     <BoxVideo>
                     <ContainerCenter2>
-                    <ReactPlayer url="https://www.youtube.com/watch?v=3fDlLEbVJWs" width="95%" height="95%" />    
+                    <ReactPlayer url="https://www.youtube.com/watch?v=E0iYzxiWxtA" width="95%" height="95%" />    
                         </ContainerCenter2>
                     </BoxVideo>
                     <BoxVideo>
                     <TituloSub isVisible={inView}> Ambulâncias </TituloSub>
                     <ContainerCenter2>
-                        <ReactPlayer url="https://www.youtube.com/watch?v=3fDlLEbVJWs" width="95%" height="95%" />    
+                        <ReactPlayer url="https://www.youtube.com/watch?v=E0iYzxiWxtA" width="95%" height="95%" />    
                         </ContainerCenter2>
                     </BoxVideo>
             </ContainerLR>

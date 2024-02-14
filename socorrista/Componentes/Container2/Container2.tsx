@@ -28,6 +28,7 @@ const Container2 = () => {
                                 and more recently with desktop publishing software like Aldus PageMaker including 
                                 versions of Lorem Ipsum.
                             </Paragrafo>
+                            
                         </ContainerCenter>
                     </ContainerLeft>
                     <ContainerRight>

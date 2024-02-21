@@ -4,7 +4,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 
 interface ModelViewerProps {
-  modelPath: string;
+  modelPath: string; 
 }
 
 const ModelViewer: React.FC<ModelViewerProps> = ({ modelPath }) => {
@@ -27,9 +27,11 @@ const ModelViewer: React.FC<ModelViewerProps> = ({ modelPath }) => {
 };
 
 const Container5 = () => {
+  const modelPath = "./Ambulance.gltf"; 
+
   return (
     <Container>
-      <ModelViewer modelPath="Ambulance.gltf" />
+      <ModelViewer modelPath={modelPath} /> 
     </Container>
   );
 };

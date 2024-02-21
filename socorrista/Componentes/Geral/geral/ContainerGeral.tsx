@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 
 export const Container = styled.div({
     width: "100%",
-    height: "1000px",
+    height: "900px",
     display: "flex",
     flexDirection: "column",
     '@media only screen and (max-width: 780px)': {

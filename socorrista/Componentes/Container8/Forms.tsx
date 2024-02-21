@@ -89,7 +89,7 @@ const Form = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            rows={4}
+            rows={1}
             required
           />
         </FormGroup>

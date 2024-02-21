@@ -9,7 +9,7 @@ const Container2 = () => {
     
     return (
         <>
-            <Container style={{background: "#BDE3FF",}} ref={ref}>
+            <Container style={{background: "#BDE3FF", marginBottom: "100px"}} ref={ref}>
                 <ContainerT>
                     <Titulo isVisible={inView}> Um pouco sobre nós! </Titulo>
                 </ContainerT>

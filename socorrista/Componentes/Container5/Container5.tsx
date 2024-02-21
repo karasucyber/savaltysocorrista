@@ -27,7 +27,7 @@ const ModelViewer: React.FC<ModelViewerProps> = ({ modelPath }) => {
 };
 
 const Container5 = () => {
-  const modelPath = "./Ambulance.gltf"; 
+  const modelPath = "public/Ambulance.gltf"; 
 
   return (
     <Container>

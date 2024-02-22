@@ -1,39 +1,38 @@
-import React from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, useGLTF } from '@react-three/drei';
+import React, { useRef, Suspense } from 'react';
+import { Canvas, useLoader } from '@react-three/fiber';
+
 import { Container } from '../Geral/geral/ContainerGeral';
+import { GLTFLoader } from 'three/examples/jsm/Addons.js';
+import { OrbitControls } from '@react-three/drei';
 
-interface ModelViewerProps {
-  getModelPath: () => string;
-}
-
-const ModelViewer: React.FC<ModelViewerProps> = ({ getModelPath }) => {
-  const modelPath = getModelPath();
-  const { scene } = useGLTF(modelPath);
+const ModelViewer = () => {
+  const gltf = useLoader(GLTFLoader, '/scene.gltf');
+  const group:any = useRef();
 
   return (
+    <group ref={group}>
+      <primitive object={gltf.scene} scale={[1.5, 1.5, 1.5]} />
+    </group>
+  );
+};
+
+const Scene = () => {
+  return (
     <Canvas>
-      <ambientLight intensity={10} />
-      <directionalLight intensity={10} position={[10, 10, 5]} />
-      <OrbitControls
-        enableZoom={false}
-        minPolarAngle={Math.PI / 3}
-        maxPolarAngle={Math.PI / 6}
-        minAzimuthAngle={-Math.PI / 5}
-        maxAzimuthAngle={Math.PI / 0}
-      />
-      {scene && <primitive object={scene} scale={[1.5, 1.5, 1.5]} />}
+      <ambientLight intensity={0.5} />
+      <directionalLight intensity={0.5} position={[10, 10, 5]} />
+      <Suspense fallback={null}>
+        <ModelViewer />
+      </Suspense>
+      <OrbitControls enableZoom={false} />
     </Canvas>
   );
 };
 
 const Container5 = () => {
-  const getModelPath = () => {
-    return "scene.gltf";
-  };
   return (
     <Container>
-      <ModelViewer getModelPath={getModelPath} />
+      <Scene />
     </Container>
   );
 };

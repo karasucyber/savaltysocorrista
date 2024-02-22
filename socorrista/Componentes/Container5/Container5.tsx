@@ -19,8 +19,8 @@ const ModelViewer = () => {
 const Scene = () => {
   return (
     <Canvas>
-      <ambientLight intensity={0.5} />
-      <directionalLight intensity={0.5} position={[10, 10, 5]} />
+      <ambientLight intensity={10} />
+      <directionalLight intensity={0.10} position={[10, 10, 5]} />
       <Suspense fallback={null}>
         <ModelViewer />
       </Suspense>

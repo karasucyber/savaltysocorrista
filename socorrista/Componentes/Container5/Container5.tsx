@@ -22,14 +22,14 @@ const ModelViewer: React.FC<ModelViewerProps> = ({ getModelPath }) => {
         minAzimuthAngle={-Math.PI / 5}
         maxAzimuthAngle={Math.PI / 0}
       />
-      {scene && <primitive object={scene} scale={[0.70, 0.70, 0.70]} />}
+      {scene && <primitive object={scene} scale={[1.5, 1.5, 1.5]} />}
     </Canvas>
   );
 };
 
 const Container5 = () => {
   const getModelPath = () => {
-    return "https://www.salvatysocorrista.com.br/Ambulance.gltf";
+    return "scene.gltf";
   };
   return (
     <Container>

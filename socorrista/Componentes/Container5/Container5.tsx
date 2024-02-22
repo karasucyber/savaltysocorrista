@@ -29,7 +29,7 @@ const ModelViewer: React.FC<ModelViewerProps> = ({ getModelPath }) => {
 
 const Container5 = () => {
   const getModelPath = () => {
-    return "Ambulance.gltf";
+    return "https://www.salvatysocorrista.com.br/Ambulance.gltf";
   };
   return (
     <Container>

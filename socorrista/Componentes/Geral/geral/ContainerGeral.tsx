@@ -59,7 +59,7 @@ export const ContainerCenter = styled.div`
     box-shadow: 20px 20px #ffff;
 
     @media only screen and (max-width: 780px) {
-        width: 400px;
+        width: 90%;
         height: 300px;
         margin: 50px;
     }

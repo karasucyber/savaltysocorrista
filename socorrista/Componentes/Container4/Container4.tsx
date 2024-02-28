@@ -165,15 +165,12 @@ const Container4 = () => {
             <Titulo style={{ color: "black" }} isVisible={inView}> Nossas ambulâncias !</Titulo>
         </ContainerT>
         <ContainerLR>
-            <ContainerLeft>
             <ContainerT>
             <Titulo style={{ color: "black", fontSize: "50px"}} isVisible={inView}> Porquê nossas ambulâncias !</Titulo>
         </ContainerT>
         <Carrousel2/>
-            </ContainerLeft>
             <ContainerAmbulance>
             <IoLogoWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "100px", color: "green", padding: "20px"}} />
-
               <Container5></Container5>
             </ContainerAmbulance>
             
@@ -197,7 +194,7 @@ const Container4 = () => {
               <Container5></Container5>
             </ContainerAmbulance>
         </ContainerLR>
-        <IoLogoWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "px", color: "green",}} />
+        <IoLogoWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "100px", color: "green",}} />
         </Container>
 
         }

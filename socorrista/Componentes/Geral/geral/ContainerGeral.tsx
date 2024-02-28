@@ -149,9 +149,18 @@ export const Paragrafo = styled.p`
     }
 `;
 
+
 export const ContainerImg = styled.div`
     column-count: 4;
     column-gap: 10px;
+
+    @media only screen and (max-width: 780px) {
+        column-count: 2; /* Altera para duas colunas em telas menores que 780px */
+    }
+
+    @media only screen and (max-width: 480px) {
+        column-count: 1; /* Altera para uma coluna em telas menores que 480px */
+    }
 `;
 
 export const ContainerIMG1 = styled.img`
@@ -159,7 +168,14 @@ export const ContainerIMG1 = styled.img`
     width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
+
+    @media only screen and (max-width: 780px) {
+        width: 100%; /* Define a largura para ocupar toda a largura da coluna */
+        margin-bottom: 10px; /* Mantém o espaçamento entre as imagens */
+    }
 `;
+
+
 
 export const Container2 = styled.div`
     width: 100%;

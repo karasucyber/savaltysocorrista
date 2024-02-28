@@ -175,8 +175,6 @@ export const ContainerIMG1 = styled.img`
     }
 `;
 
-
-
 export const Container2 = styled.div`
     width: 100%;
     height: 1750px;
@@ -185,17 +183,21 @@ export const Container2 = styled.div`
     align-items: center;
 
     @media only screen and (max-width: 780px) {
-        height: 1200px;
-        justify-content: center;
+        height: 1500px;
     }
 `;
 
 export const ContainerSocial = styled.div`
-    width: 50%;
+    width: 90%;
+    max-width: 500px; /* Define um tamanho máximo para o container */
     padding: 50px;
     background: white;
-    justify-content: center;
-    border-radius: 50px;
+    border-radius: 20px;
+    margin-top: 20px;
+
+    @media only screen and (max-width: 780px) {
+        padding: 30px;
+    }
 `;
 
 export const Containericons = styled.div`
@@ -203,5 +205,5 @@ export const Containericons = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 30px; /* Reduz o espaçamento entre os ícones em telas menores */
 `;

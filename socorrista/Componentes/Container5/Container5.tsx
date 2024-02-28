@@ -15,7 +15,7 @@ const ModelViewer = () => {
     {isMobileDevice ? (
       <>
       <group ref={group}>
-<primitive object={gltf.scene} position={[0,-2,0]} scale={[1, 1, 1.]} />
+<primitive object={gltf.scene} position={[0,-2,0]} scale={[1.5, 1.5, 1.5]} />
 </group>
  
       </>
@@ -56,7 +56,7 @@ export const Container1 = styled.div`
     flex-direction: column;
 
     @media only screen and (max-width: 780px) {
-        height: 100px;
+        height: 400px;
     }
 `;
 

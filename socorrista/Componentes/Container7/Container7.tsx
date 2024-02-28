@@ -111,11 +111,16 @@ const FooterCarousel = () => {
     );
 };
 
+export const Container1 = styled.div({
+    background: "#EE8338", 
+    height: "500px",  
+});
+
 
 const Container7 = () => {
     const { ref, inView } = useInView({ threshold: 0.6 });
     return (
-             <Container style={{ background: "#EE8338", height: "250px" }} ref={ref}/>
+             <Container1  ref={ref}/>
       
     );
 };

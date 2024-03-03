@@ -11,7 +11,7 @@ import styled from "styled-components";
 
 const CarouselContainer = styled.div`
   width: 100%;
-  height: 400px; /* Ajuste a altura conforme necessário */
+  height: 100px; /* Ajuste a altura conforme necessário */
   overflow: hidden;
   position: relative;
   touch-action: pan-y; /* Permite o movimento de arrastar vertical */
@@ -25,8 +25,8 @@ const LogoCarousel = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 400px;
-  height: 400px; /* Defina a altura desejada para o seu logo */
+  width: 200px;
+  height: 200px; /* Defina a altura desejada para o seu logo */
   margin-right: 20px; /* Espaçamento entre os logos, ajuste conforme necessário */
 `;
 

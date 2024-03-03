@@ -19,15 +19,15 @@ export default function Container1() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+<SwiperSlide style={{fontSize: "100px", backgroundImage: "url(6.jpeg)",backgroundPosition: "center", width:"100%" ,backgroundRepeat: "no-repeat", backgroundSize: "",}}></SwiperSlide>
+<SwiperSlide style={{fontSize: "100px", backgroundImage: "url(7.jpeg)",backgroundPosition: "center", width:"100%" ,backgroundRepeat: "no-repeat", backgroundSize: "",}}></SwiperSlide>       
+<SwiperSlide style={{fontSize: "100px", backgroundImage: "url(8.jpeg)",backgroundPosition: "center", width:"100%" ,backgroundRepeat: "no-repeat", backgroundSize: "",}}></SwiperSlide>       
+<SwiperSlide style={{fontSize: "100px", backgroundImage: "url(9.jpeg)",backgroundPosition: "center", width:"100%" ,backgroundRepeat: "no-repeat", backgroundSize: "",}}></SwiperSlide>       
+<SwiperSlide style={{fontSize: "100px", backgroundImage: "url(10.jpeg)",backgroundPosition: "center", width:"100%" ,backgroundRepeat: "no-repeat", backgroundSize: "",}}></SwiperSlide>       
+<SwiperSlide style={{fontSize: "100px", backgroundImage: "url(11.jpeg)",backgroundPosition: "center", width:"100%" ,backgroundRepeat: "no-repeat", backgroundSize: "",}}></SwiperSlide>       
+<SwiperSlide style={{fontSize: "100px", backgroundImage: "url(12.jpeg)",backgroundPosition: "center", width:"100%" ,backgroundRepeat: "no-repeat", backgroundSize: "",}}></SwiperSlide>       
+
+     
       </Swiper>
     </>
   );

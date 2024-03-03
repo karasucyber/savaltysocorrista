@@ -21,7 +21,7 @@ const ModelViewer = () => {
       </>
   ) :<>
        <group ref={group}>
-<primitive object={gltf.scene}  scale={[1.5, 1.5, 1.5]} />
+<primitive object={gltf.scene}  position={[-0,-2,-0]}  scale={[1.5, 1.5, 1.5]} />
 </group>
 </>
   
@@ -49,20 +49,25 @@ const Scene = () => {
   );
 };
 
+
 export const Container1 = styled.div`
-    width: 100%;
-    height: 1000px;
+    width: 50%;
+    height: 800px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Corrected misspelling from 'aling-itens' to 'align-items' */
 
     @media only screen and (max-width: 780px) {
-        height: 400px;
+      width: 100%;
+      height: 100%;
     }
 `;
 
+
 const Container5 = () => {
   return (
-    <Container1 style={{}}>
+    <Container1 >
       <Scene />
     </Container1>
   );

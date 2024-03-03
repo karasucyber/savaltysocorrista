@@ -70,6 +70,7 @@ export const ContainerCenter2 = styled(ContainerCenter)`
     background: #BDE3FF;
 `;
 
+
 export const ContainerCenterIMG = styled.div`
     display: flex;
     align-items: center;
@@ -78,13 +79,18 @@ export const ContainerCenterIMG = styled.div`
     height: 300px;
     background: white;
     box-shadow: 40px 40px 0px #EE8338;
-
+    background-image: url('6.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjusted to cover the entire container */
+    
     @media only screen and (max-width: 780px) {
         width: 350px;
         height: 300px;
-        margin: 50px;
+        margin: 50px auto; /* Center the container horizontally */
     }
 `;
+
 
 export const ContainerLeft = styled.div`
     width: 50%; 
@@ -120,7 +126,6 @@ export const ContainerT = styled.div`
 
 export const Titulo = styled.h1<TituloProps>`
     font-size: 80px;
-    color: Background;
     opacity: ${(props) => (props.isVisible ? '1' : '0')};
     transition: opacity 0.5s ease;
 
@@ -142,7 +147,9 @@ export const TituloSub = styled.h1<TituloProps>`
 `;
 
 export const Paragrafo = styled.p`
-    font-size: 15px;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
 
     @media only screen and (max-width: 780px) {
         font-size: 10px;

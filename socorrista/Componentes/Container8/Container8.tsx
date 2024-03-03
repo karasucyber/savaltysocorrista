@@ -12,7 +12,7 @@ import Form from './Forms';
 
 const CarouselContainer = styled.div`
   width: 100%;
-  height: 400px; /* Ajuste a altura conforme necessário */
+  height: 100%; /* Ajuste a altura conforme necessário */
   overflow: hidden;
   position: relative;
   touch-action: pan-y; /* Permite o movimento de arrastar vertical */
@@ -24,11 +24,12 @@ const LogoCarousel = styled.div`
   display: flex;
   transition: transform 0.5s ease-in-out;
   cursor: grab; /* Muda o cursor para indicar que o componente pode ser arrastado */
+  
 `;
 
 const Logo = styled.img`
-  width: 400px;
-  height: 400px; /* Defina a altura desejada para o seu logo */
+  width: 300px;
+  height: px; /* Defina a altura desejada para o seu logo */
   margin-right: 20px; /* Espaçamento entre os logos, ajuste conforme necessário */
 `;
 
@@ -41,7 +42,7 @@ const NextButton = styled.button`
   border: none;
   cursor: pointer;
   font-size: 24px;
-  color: #333; /* Cor do botão, ajuste conforme necessário */
+  color: #333; 
 `;
 
 const PrevButton = styled.button`
@@ -53,7 +54,7 @@ const PrevButton = styled.button`
   border: none;
   cursor: pointer;
   font-size: 24px;
-  color: #333; /* Cor do botão, ajuste conforme necessário */
+  color: #333; 
 `;
 
 const companies: any[] = ["playball.png", "playball.png", "playball.png", "playball.png", "playball.png", "playball.png","playball.png", "playball.png", "playball.png", "playball.png", "playball.png", "playball.png"];
@@ -118,7 +119,7 @@ const Container8 = () => {
     const { ref, inView } = useInView({ threshold: 0.6 });
     return (
              <Container style={{ background: "#EE8338",}} ref={ref}>
-<div style={{background: "white", height: "400px", padding: "10px"}}>
+<div style={{background: "white", height: "250px", padding: "10px"}}>
 <FooterCarousel/>
 
 </div>

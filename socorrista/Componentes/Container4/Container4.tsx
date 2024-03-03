@@ -5,6 +5,8 @@ import { useInView } from 'react-intersection-observer';
 import ReactPlayer from 'react-player';
 import Container5 from "../Container5/Container5";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 
 const ContainerR = styled.div`
@@ -190,11 +192,11 @@ const Container4 = () => {
         </ContainerT>
         <Carrousel/>
             </ContainerLeft>
-            <ContainerAmbulance>
-              <Container5></Container5>
-            </ContainerAmbulance>
+            <Container5/>
+
         </ContainerLR>
-        <IoLogoWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "100px", color: "green",}} />
+        
+        <FaWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "100px", color: "green",}} />
         </Container>
 
         }

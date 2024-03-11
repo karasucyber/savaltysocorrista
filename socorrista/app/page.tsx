@@ -25,7 +25,6 @@ export default function Home() {
       <Container3/>   
       <Container4/>
       <Container6/>
-      <Container7/>
       <Container8/>
     </Body>
   );

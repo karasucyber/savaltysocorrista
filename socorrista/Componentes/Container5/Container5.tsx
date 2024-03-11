@@ -5,6 +5,9 @@ import { GLTFLoader } from 'three/examples/jsm/Addons.js';
 import { OrbitControls } from '@react-three/drei';
 import { useMediaQuery } from '@react-hook/media-query';
 import styled from 'styled-components';
+
+
+
 const ModelViewer = () => {
   const gltf = useLoader(GLTFLoader, '/scene.gltf');
   const group:any = useRef();
@@ -23,18 +26,7 @@ const ModelViewer = () => {
        <group ref={group}>
 <primitive object={gltf.scene}  position={[-0,-2,-0]}  scale={[1.5, 1.5, 1.5]} />
 </group>
-</>
-  
-
-
-
-  }
-
-</>
-    
-   
-  );
-};
+</>}</>);};
 
 const Scene = () => {
   return (
@@ -49,7 +41,6 @@ const Scene = () => {
   );
 };
 
-
 export const Container1 = styled.div`
     width: 50%;
     height: 800px;
@@ -60,7 +51,7 @@ export const Container1 = styled.div`
 
     @media only screen and (max-width: 780px) {
       width: 100%;
-      height: 100%;
+      height: 500px;
     }
 `;
 

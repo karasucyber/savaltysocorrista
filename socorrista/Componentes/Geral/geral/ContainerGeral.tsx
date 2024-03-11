@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    height: 900px;
+    height: 800px;
     display: flex;
     flex-direction: column;
 
@@ -57,7 +57,6 @@ export const ContainerCenter = styled.div`
     background: #EE8338;
     border-radius: 20px;
     box-shadow: 20px 20px #ffff;
-
     @media only screen and (max-width: 780px) {
         width: 90%;
         height: 300px;
@@ -65,8 +64,9 @@ export const ContainerCenter = styled.div`
     }
 `;
 
-export const ContainerCenter2 = styled(ContainerCenter)`
-    height: 500px;
+export const ContainerCenter2 = styled(ContainerCenter)` 
+    width: 100%;
+    height: 100%;
     background: #BDE3FF;
 `;
 
@@ -152,7 +152,7 @@ export const Paragrafo = styled.p`
     padding: 10px;
 
     @media only screen and (max-width: 780px) {
-        font-size: 10px;
+        font-size: 17px;
     }
 `;
 

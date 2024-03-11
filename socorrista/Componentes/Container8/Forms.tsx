@@ -22,6 +22,8 @@ const Input = styled.input`
   font-size: 1rem;
   border-radius: 4px;
   border: 1px solid #ccc;
+  width: 100%;
+  background: #5DC2C8;
 `;
 
 const Button = styled.button`
@@ -29,12 +31,12 @@ const Button = styled.button`
   font-size: 1rem;
   border: none;
   border-radius: 4px;
-  background-color: #007bff;
+  background-color: #5DC2C8;
   color: #fff;
   cursor: pointer;
-
   &:hover {
-    background-color: #0056b3;
+    width: 50%;
+
   }
 `;
 
@@ -52,15 +54,15 @@ const Form = () => {
 
   const handleSubmit = (e:any) => {
     e.preventDefault();
-    // Aqui você pode fazer o que quiser com os dados do formulário
     console.log(formData);
   };
 
   return (
     <FormContainer>
+     <h1>Faça seu orçamento </h1>
       <form onSubmit={handleSubmit}>
         <FormGroup>
-          <Label htmlFor="name">Nome:</Label>
+          <Label htmlFor="name">Empresa:</Label>
           <Input
             type="text"
             id="name"
@@ -89,7 +91,7 @@ const Form = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            rows={1}
+            rows={2}
             required
           />
         </FormGroup>

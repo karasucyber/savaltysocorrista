@@ -7,15 +7,17 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
 
 
+
+
 const Container6 = () => {
     const { ref, inView } = useInView({ threshold: 0.6 });
 
     return (
         <>
-            <Container2 style={{ background: "#BDE3FF", }} ref={ref}>
+            <Container2 style={{ background: "#BDE3FF",}} ref={ref}>
                 <ContainerT>
-                    <h1> Nossa galeria !!</h1>
-                </ContainerT>
+            <h1 style={{fontSize: "60px"}}> Nossa galeria !</h1>
+         </ContainerT>
                 <ContainerImg>
                     <ContainerIMG1 src="2.jpeg" alt="" />
                     <ContainerIMG1 src="3.jpeg" alt="" />
@@ -33,21 +35,20 @@ const Container6 = () => {
                     <ContainerIMG1 src="16.jpeg" alt="" />
                     <ContainerIMG1 src="17.jpeg" alt="" />
                 </ContainerImg>
-                <ContainerSocial>
-
-                    <Containericons>
-                        <h1> Faça seu orçamento</h1>
-                    </Containericons>
-                    <Containericons>
-                    <FaWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "100px", color: "green",}} />
-                    <FaWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "100px", color: "green",}} />
-                    </Containericons>
-
-                </ContainerSocial>
-
             </Container2>
         </>
     );
 };
 
 export default Container6;
+/*<ContainerSocial>
+
+<Containericons>
+    <h1> Faça seu orçamento</h1>
+</Containericons>
+<Containericons>
+<FaWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "100px", color: "green",}} />
+<FaWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "100px", color: "green",}} />
+</Containericons>
+
+</ContainerSocial> */

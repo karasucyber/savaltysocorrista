@@ -1,10 +1,14 @@
-import { Container, ContainerCenter, ContainerCenterIMG } from '../Geral/geral/ContainerGeral';
+import { ContainerCenter } from '../Geral/geral/ContainerGeral';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import { useInView } from 'react-intersection-observer';
-import { BoxVideo, ContainerCenter2, ContainerLR, ContainerLeft, ContainerRight, ContainerT, Paragrafo, Titulo, TituloSub } from "../Geral/geral/ContainerGeral";
-
-
+import { BoxVideo, ContainerLR, ContainerLeft, ContainerRight, ContainerT, Paragrafo, Titulo, TituloSub } from "../Geral/geral/ContainerGeral";
+import { CiInstagram } from "react-icons/ci";
+import { CiLinkedin } from "react-icons/ci";
+import { AiFillSignal } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
+import { FaHeadSideVirus } from "react-icons/fa";
+import { MdWork } from "react-icons/md";
 
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
@@ -12,12 +16,11 @@ import Form from './Forms';
 
 const CarouselContainer = styled.div`
   width: 100%;
-  height: 100%; /* Ajuste a altura conforme necessário */
+  height: 100%; 
   overflow: hidden;
   position: relative;
-  touch-action: pan-y; /* Permite o movimento de arrastar vertical */
+  touch-action: pan-y; 
   border-radius: 10px;
-  background: white;
   `;
 
 const LogoCarousel = styled.div`
@@ -43,6 +46,8 @@ const NextButton = styled.button`
   cursor: pointer;
   font-size: 24px;
   color: #333; 
+  z-index: 1;
+
 `;
 
 const PrevButton = styled.button`
@@ -55,9 +60,26 @@ const PrevButton = styled.button`
   cursor: pointer;
   font-size: 24px;
   color: #333; 
+  z-index: 1;
 `;
 
-const companies: any[] = ["playball.png", "playball.png", "playball.png", "playball.png", "playball.png", "playball.png","playball.png", "playball.png", "playball.png", "playball.png", "playball.png", "playball.png"];
+
+export const ContainerCenterIMG = styled.div`
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    width: 600px;
+    height: 400px;
+    background: white;
+    flex-direction: column;
+    
+    /* Media query for smaller screens */
+    @media only screen and (max-width: 780px) {
+        width: 100%;
+        height: 500px;
+    }
+`;
+const companies: any[] = ["playball.png", "playball.png", "playball.png", "playball.png", "playball.png", "playball.png", "playball.png", "playball.png", "playball.png", "playball.png", "playball.png", "playball.png"];
 
 const FooterCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -114,34 +136,49 @@ const FooterCarousel = () => {
     );
 };
 
+export const Container = styled.div`
+width: 100%;
+height: 500px;
+display: flex;
+background: white;
+flex-direction: column;
+@media only screen and (max-width: 780px) {
+    height: 1200px;
+    justify-content: center;
+    alingItens: center;
+}
+`;
+
+
+export const ContainerCenter2 = styled.div` 
+    width: 100%;
+    height: 100%;
+    background: #BDE3FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;  
 
 const Container8 = () => {
     const { ref, inView } = useInView({ threshold: 0.6 });
     return (
-             <Container style={{ background: "#EE8338",}} ref={ref}>
-<div style={{background: "white", height: "250px", padding: "10px"}}>
-<FooterCarousel/>
+        <Container ref={ref}>
+            <ContainerLR ref={ref}>
+                <ContainerLeft>
+                    <ContainerCenterIMG >
+                        <img style={{ width: "400px", height: "400px" }} src="Logotipo_Saúde_e_Bem_Estar_Verde_Simples-removebg-preview.png"></img>
+                    </ContainerCenterIMG>
+                </ContainerLeft>
+                <ContainerRight>
+                    <Form></Form>
+                </ContainerRight>
+            </ContainerLR>
+            <ContainerCenter2 style={{ background: "white" }} >
+                <CiInstagram style={{ width: "70px", height: "70px" }} />
+                <CiLinkedin style={{ width: "70px", height: "70px" }} />
+            </ContainerCenter2>
+        </Container>
 
-</div>
-<ContainerLR ref={ref}>
-                    
-                    <ContainerLeft>
-                        <TituloSub isVisible={inView}> Nossa história </TituloSub>
-                        <ContainerCenterIMG>
-                           <h1> logo </h1>
-                        </ContainerCenterIMG>
-                    </ContainerLeft>
-                    
-                    <ContainerRight>
-                        <ContainerCenterIMG>
-                            <Form></Form>
-
-
-                        </ContainerCenterIMG>
-                    </ContainerRight>
-                </ContainerLR>
-             </Container>
-      
     );
 };
 

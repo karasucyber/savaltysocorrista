@@ -172,7 +172,7 @@ const Container4 = () => {
         </ContainerT>
         <Carrousel2/>
             <ContainerAmbulance>
-            <IoLogoWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "100px", color: "green", padding: "20px"}} />
+            <FaWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "200px", color: "green",}} />
               <Container5></Container5>
             </ContainerAmbulance>
             
@@ -180,7 +180,6 @@ const Container4 = () => {
                 </ContainerR>
             </>
         ) :
-
         <Container style={{ background: "white", height: "1000px"}} ref={ref}>
         <ContainerT>
             <Titulo style={{ color: "black" }} isVisible={inView}> Nossas ambulâncias !</Titulo>

@@ -5,7 +5,6 @@ export const Container = styled.div`
     height: 800px;
     display: flex;
     flex-direction: column;
-
     @media only screen and (max-width: 780px) {
         height: 1200px;
         justify-content: center;
@@ -19,7 +18,6 @@ export const ContainerLR = styled.div`
     width: 100%;
     height: 500px;
     margin-bottom: 100px;
-
     @media only screen and (max-width: 780px) {
         flex-direction: column;
         height: 100%;
@@ -41,7 +39,6 @@ export const BoxVideo = styled.div`
     width: 100%; 
     height: 500px; 
     margin: 15px;
-
     @media only screen and (max-width: 780px) {
         width: 80%;
         height: 100%;
@@ -160,11 +157,9 @@ export const Paragrafo = styled.p`
 export const ContainerImg = styled.div`
     column-count: 4;
     column-gap: 10px;
-
     @media only screen and (max-width: 780px) {
         column-count: 2; /* Altera para duas colunas em telas menores que 780px */
     }
-
     @media only screen and (max-width: 480px) {
         column-count: 1; /* Altera para uma coluna em telas menores que 480px */
     }

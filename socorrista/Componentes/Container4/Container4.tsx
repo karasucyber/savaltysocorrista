@@ -31,23 +31,23 @@ import { EffectCreative } from 'swiper/modules';
 import { useMediaQuery } from "@react-hook/media-query";
 
 export function Carrousel() {
-  return ( 
+  return (
     <>
-     <Swiper style={{
-      boxShadow: "20px 20px #EE8338",
-      borderRadius:"50px",
-      width: "600px",
-      height: "400px",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      fontSize: "22px",
-      fontWeight: "bold",
-      color: "#fff",
-      background: "black",
-      padding: "10px",
-      
-    }}
+      <Swiper style={{
+        boxShadow: "20px 20px #EE8338",
+        borderRadius: "50px",
+        width: "600px",
+        height: "400px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: "22px",
+        fontWeight: "bold",
+        color: "#fff",
+        background: "black",
+        padding: "10px",
+
+      }}
         grabCursor={true}
         effect={'creative'}
         creativeEffect={{
@@ -63,14 +63,14 @@ export function Carrousel() {
         className="mySwiper1"
       >
         <SwiperSlide style={{ background: "black", }}>Slide 1</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 2</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 3</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 4</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 5</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 6</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 7</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 8</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 9</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 2</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 3</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 4</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 5</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 6</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 7</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 8</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 9</SwiperSlide>
       </Swiper>
       <Swiper
         grabCursor={true}
@@ -94,22 +94,22 @@ export function Carrousel() {
 }
 
 export function Carrousel2() {
-  return ( 
+  return (
     <>
-     <Swiper style={{
-      boxShadow: "20px 20px #EE8338",
-      borderRadius:"50px",
-      width: "90%",
-      height: "400px",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      fontSize: "22px",
-      fontWeight: "bold",
-      color: "#fff",
-      background: "black",
-      
-    }}
+      <Swiper style={{
+        boxShadow: "20px 20px #EE8338",
+        borderRadius: "50px",
+        width: "90%",
+        height: "400px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: "22px",
+        fontWeight: "bold",
+        color: "#fff",
+        background: "black",
+
+      }}
         grabCursor={true}
         effect={'creative'}
         creativeEffect={{
@@ -125,14 +125,14 @@ export function Carrousel2() {
         className="mySwiper1"
       >
         <SwiperSlide style={{ background: "black", }}>Slide 1</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 2</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 3</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 4</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 5</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 6</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 7</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 8</SwiperSlide>
-        <SwiperSlide style={{ background: "black"}}>Slide 9</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 2</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 3</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 4</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 5</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 6</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 7</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 8</SwiperSlide>
+        <SwiperSlide style={{ background: "black" }}>Slide 9</SwiperSlide>
       </Swiper>
       <Swiper
         grabCursor={true}
@@ -156,52 +156,51 @@ export function Carrousel2() {
 }
 
 const Container4 = () => {
-    const { ref, inView } = useInView({ threshold: 0.6 });
-    const isMobileDevice = useMediaQuery("(max-width: 780px)")
+  const { ref, inView } = useInView({ threshold: 0.6 });
+  const isMobileDevice = useMediaQuery("(max-width: 780px)")
 
-    return (<>
-     {isMobileDevice ? (
-            <>
-                <ContainerR>
-                <ContainerT>
+  return (<>
+    {isMobileDevice ? (
+      <>
+        <ContainerR>
+          <ContainerT>
             <Titulo style={{ color: "black" }} isVisible={inView}> Nossas ambulâncias !</Titulo>
-        </ContainerT>
-        <ContainerLR>
+          </ContainerT>
+          <ContainerLR>
             <ContainerT>
-            <Titulo style={{ color: "black", fontSize: "50px"}} isVisible={inView}> Porquê nossas ambulâncias !</Titulo>
-        </ContainerT>
-        <Carrousel2/>
+              <Titulo style={{ color: "black", fontSize: "50px" }} isVisible={inView}> Porquê nossas ambulâncias !</Titulo>
+            </ContainerT>
+            <Carrousel2 />
+            <FaWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "200px", color: "green", }} />
+
             <ContainerAmbulance>
-            <FaWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "200px", color: "green",}} />
               <Container5></Container5>
             </ContainerAmbulance>
-            
-        </ContainerLR>
-                </ContainerR>
-            </>
-        ) :
-        <Container style={{ background: "white", height: "1000px"}} ref={ref}>
+
+          </ContainerLR>
+        </ContainerR>
+      </>
+    ) :
+      <Container style={{ background: "white", height: "1000px" }} ref={ref}>
         <ContainerT>
-            <Titulo style={{ color: "black" }} isVisible={inView}> Nossas ambulâncias !</Titulo>
+          <Titulo style={{ color: "black" }} isVisible={inView}> Nossas ambulâncias !</Titulo>
         </ContainerT>
         <ContainerLR>
-            <ContainerLeft>
+          <ContainerLeft>
             <ContainerT>
-            <Titulo style={{ color: "black", fontSize: "50px"}} isVisible={inView}> Porquê nossas ambulâncias !</Titulo>
-        </ContainerT>
-        <Carrousel/>
-            </ContainerLeft>
-            <Container5/>
-
+              <Titulo style={{ color: "black", fontSize: "50px" }} isVisible={inView}> Porquê nossas ambulâncias !</Titulo>
+            </ContainerT>
+            <Carrousel />
+          </ContainerLeft>
+          <Container5 />
         </ContainerLR>
-        
-        <FaWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "100px", color: "green",}} />
-        </Container>
+        <FaWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "100px", color: "green", }} />
+      </Container>
 
-        }
-    
-    </>
-    )
+    }
+
+  </>
+  )
 }
 
 export default Container4;

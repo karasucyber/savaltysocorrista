@@ -51,14 +51,8 @@ const Container2 = () => {
                             <Paragrafo>
                                 Somos a Salvaty Socorrista, uma empresa consolidada com mais de 5 anos de experiência no mercado. Desde o início, nos dedicamos a oferecer serviços de socorro e suporte em eventos de todos os tipos e tamanhos. O que começou como trabalho freelance rapidamente evoluiu para uma operação profissional e dedicada, à medida que ganhamos a confiança de nossos clientes e expandimos nossos serviços. Hoje, somos reconhecidos por nossa excelência, rapidez e compromisso com a segurança e bem-estar de todos os envolvidos em cada evento que atendemos. Estamos ansiosos para continuar a crescer, inovar e servir nossa comunidade com o mais alto padrão de cuidado e profissionalismo.
                             </Paragrafo>
-                        </ContainerCenter>
-                        <ContainerCenter>
-                            <Paragrafo>
-                                Somos a Salvaty Socorrista, uma empresa consolidada com mais de 5 anos de experiência no mercado. Desde o início, nos dedicamos a oferecer serviços de socorro e suporte em eventos de todos os tipos e tamanhos. O que começou como trabalho freelance rapidamente evoluiu para uma operação profissional e dedicada, à medida que ganhamos a confiança de nossos clientes e expandimos nossos serviços. Hoje, somos reconhecidos por nossa excelência, rapidez e compromisso com a segurança e bem-estar de todos os envolvidos em cada evento que atendemos. Estamos ansiosos para continuar a crescer, inovar e servir nossa comunidade com o mais alto padrão de cuidado e profissionalismo.
-                            </Paragrafo>
-                        </ContainerCenter>
-
-                    </ContainerR>
+                        </ContainerCenter>    
+                </ContainerR>
                 </>
             ) :
                 <Container style={{ background: "#BDE3FF", marginBottom: "100px", padding: "0px",height: "1200px" }} ref={ref}>
@@ -74,7 +68,6 @@ const Container2 = () => {
                  Somos a Salvaty Socorrista, uma empresa consolidada com mais de 5 anos de experiência no mercado. Desde o início, nos dedicamos a oferecer serviços de socorro e suporte em eventos de todos os tipos e tamanhos. O que começou como trabalho freelance rapidamente evoluiu para uma operação profissional e dedicada, à medida que ganhamos a confiança de nossos clientes e expandimos nossos serviços. Hoje, somos reconhecidos por nossa excelência, rapidez e compromisso com a segurança e bem-estar de todos os envolvidos em cada evento que atendemos. Estamos ansiosos para continuar a crescer, inovar e servir nossa comunidade com o mais alto padrão de cuidado e profissionalismo.
                 </Paragrafo>
             </ContainerCenter>
-            
         </ContainerLeft>
                         <ContainerRight>
                             <ContainerCenterIMG />
@@ -88,9 +81,7 @@ const Container2 = () => {
                                     Somos a Salvaty Socorrista, uma empresa consolidada com mais de 5 anos de experiência no mercado. Desde o início, nos dedicamos a oferecer serviços de socorro e suporte em eventos de todos os tipos e tamanhos. O que começou como trabalho freelance rapidamente evoluiu para uma operação profissional e dedicada, à medida que ganhamos a confiança de nossos clientes e expandimos nossos serviços. Hoje, somos reconhecidos por nossa excelência, rapidez e compromisso com a segurança e bem-estar de todos os envolvidos em cada evento que atendemos. Estamos ansiosos para continuar a crescer, inovar e servir nossa comunidade com o mais alto padrão de cuidado e profissionalismo.
                                 </Paragrafo>
                             </ContainerCenter>
-
                         </ContainerLeft>
-                       
                     </ContainerLR>
                 </Container>
 

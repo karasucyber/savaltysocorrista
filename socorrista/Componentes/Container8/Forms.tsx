@@ -4,12 +4,16 @@ import styled from 'styled-components';
 const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 400px;
   margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
 `;
 
 const FormGroup = styled.div`
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 `;
 
 const Label = styled.label`
@@ -18,25 +22,48 @@ const Label = styled.label`
 `;
 
 const Input = styled.input`
-  padding: 0.5rem;
+  padding: 0.7rem;
   font-size: 1rem;
   border-radius: 4px;
-  border: 1px solid #ccc;
-  width: 100%;
-  background: #5DC2C8;
+  border: 1px solid #ced4da;
+  width: 90%;
+  background-color: #fff;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+`;
+
+const TextArea = styled.textarea`
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  width: 80%;
+  height: 40%;
+  background-color: #fff;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  resize: vertical;
+  &:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
 `;
 
 const Button = styled.button`
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.5rem;
   font-size: 1rem;
   border: none;
   border-radius: 4px;
-  background-color: #5DC2C8;
+  background-color: #007bff;
   color: #fff;
   cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
   &:hover {
-    width: 50%;
-
+    background-color: #0056b3;
   }
 `;
 
@@ -47,19 +74,19 @@ const Form = () => {
     message: ''
   });
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log(formData);
   };
 
   return (
     <FormContainer>
-     <h1>Faça seu orçamento </h1>
+      <h1 style={{ textAlign: 'center', marginBottom: '1.5rem' }}>Faça seu orçamento</h1>
       <form onSubmit={handleSubmit}>
         <FormGroup>
           <Label htmlFor="name">Empresa:</Label>
@@ -85,13 +112,12 @@ const Form = () => {
         </FormGroup>
         <FormGroup>
           <Label htmlFor="message">Mensagem:</Label>
-          <Input
-            as="textarea"
+          <TextArea
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
-            rows={2}
+            rows={4}
             required
           />
         </FormGroup>

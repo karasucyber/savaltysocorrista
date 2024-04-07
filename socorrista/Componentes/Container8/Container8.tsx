@@ -162,17 +162,24 @@ export const ContainerCenter2 = styled.div`
 const Container8 = () => {
     const { ref, inView } = useInView({ threshold: 0.6 });
     return (
-        <Container ref={ref}>
+<>
+<Container ref={ref}>
             <ContainerLR ref={ref}>
-      
+                <ContainerLeft>
+                    <ContainerCenterIMG >
+                        <img style={{ width: "300px", height: "300px" }} src="socorrista.jpeg"></img>
+                    </ContainerCenterIMG>
+                </ContainerLeft>
+                <ContainerRight>
                     <Form></Form>
+                </ContainerRight>
             </ContainerLR>
-            <ContainerCenter2 style={{ background: "white" }} >
+        </Container>
+        <ContainerCenter2 style={{ background: "white", height: "250px" }} >
                 <CiInstagram style={{ width: "70px", height: "70px" }} />
                 <CiLinkedin style={{ width: "70px", height: "70px" }} />
             </ContainerCenter2>
-        </Container>
-
+</>
     );
 };
 

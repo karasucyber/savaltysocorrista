@@ -8,6 +8,31 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
 
 
+const StyledContainer = styled.div`
+display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Define o z-index */
+`;
+
+const Container04 = () => {
+  const handleIconClick = () => {
+    window.open("https://react-icons.github.io/react-icons/search/#q=whats", "_blank");
+  };
+
+  return (
+    <StyledContainer>
+      <FaWhatsapp
+        style={{ width: "100px", height: "200px", color: "green", cursor: "pointer" }}
+        onClick={handleIconClick}
+      />
+    </StyledContainer>
+  );
+}
+
+
+
+
 
 const ContainerR = styled.div`
 display: flex;
@@ -43,9 +68,11 @@ export function Carrousel() {
         justifyContent: "center",
         fontSize: "22px",
         fontWeight: "bold",
-        color: "#fff",
-        background: "black",
+        color: "black",
+        background: "#BDE3FD",
         padding: "10px",
+        textShadow: "2px 2px 4px white"
+        
 
       }}
         grabCursor={true}
@@ -62,24 +89,24 @@ export function Carrousel() {
         modules={[EffectCreative]}
         className="mySwiper1"
       >
-        <SwiperSlide style={{ background: "black", }}>
+        <SwiperSlide style={{ background: "#BDE3FD", }}>
           <div style={{ display: "flex", flexDirection: "column",width: "80%"  }}>
-            <h1>Eficiência, Prontidão, Confiança:
-            </h1>
-            Nossa ambulância é um reflexo dessas três palavras. Equipada com tecnologia de ponta e uma equipe altamente treinada, estamos sempre prontos para agir rapidamente e com eficácia em qualquer situação de emergência.
+            <h1>Eficiência, Prontidão, Confiança:</h1>
+            <p style={{fontSize: "24px"}}>Nossa ambulância é um reflexo dessas três palavras. Equipada com tecnologia de ponta e uma equipe altamente treinada, estamos sempre prontos para agir rapidamente e com eficácia em qualquer situação de emergência.</p>
           </div></SwiperSlide>
 
-        <SwiperSlide style={{ background: "black" }}>
+        <SwiperSlide style={{ background: "#BDE3FD" }}>
           <div style={{ display: "flex", flexDirection: "column", width: "80%" }}>
             <h1>Velocidade, Segurança, Cuidado:</h1>
-            Quando você vê nossa ambulância, você vê mais do que apenas um veículo. É um símbolo de velocidade, segurança e cuidado. Estamos comprometidos em chegar ao local rapidamente, garantindo a segurança
-            de nossos pacientes e fornecendo o mais alto nível de cuidado médico.
+            <p style={{fontSize: "24px"}}>  Quando você vê nossa ambulância, você vê mais do que apenas um veículo. É um símbolo de velocidade, segurança e cuidado. Estamos comprometidos em chegar ao local rapidamente, garantindo a segurança
+            de nossos pacientes e fornecendo o mais alto nível de cuidado médico.</p>
+          
           </div></SwiperSlide>
 
-        <SwiperSlide style={{ background: "black" }}>
+        <SwiperSlide style={{ background: "#BDE3FD" }}>
           <div style={{ display: "flex", flexDirection: "column", width: "80%" }}>
-            <h1>Resposta Imediata, Vidas Salvas:</h1>
-            Cada segundo conta em uma emergência. Com nossa ambulância, garantimos uma resposta imediata. É essa prontidão que nos permite salvar vidas todos os dias.
+          <h1>Resposta Imediata, Vidas Salvas:</h1>
+          <p style={{fontSize: "24px"}}>Cada segundo conta em uma emergência. Com nossa ambulância, garantimos uma resposta imediata. É essa prontidão que nos permite salvar vidas todos os dias.</p>
           </div></SwiperSlide>
       </Swiper>
       <Swiper
@@ -109,15 +136,18 @@ export function Carrousel2() {
       <Swiper style={{
         boxShadow: "20px 20px #EE8338",
         borderRadius: "50px",
-        width: "90%",
+        width: "80%",
         height: "400px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         fontSize: "22px",
         fontWeight: "bold",
-        color: "#fff",
-        background: "black",
+        color: "black",
+        background: "#BDE3FD",
+        padding: "10px",
+        textShadow: "2px 2px 4px white"
+        
 
       }}
         grabCursor={true}
@@ -134,15 +164,25 @@ export function Carrousel2() {
         modules={[EffectCreative]}
         className="mySwiper1"
       >
-        <SwiperSlide style={{ background: "black", }}>Slide 1</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 2</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 3</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 4</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 5</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 6</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 7</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 8</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 9</SwiperSlide>
+        <SwiperSlide style={{ background: "#BDE3FD", }}>
+          <div style={{ display: "flex", flexDirection: "column",width: "80%"  }}>
+            <h1>Eficiência, Prontidão, Confiança:</h1>
+            <p style={{fontSize: "16px"}}>Nossa ambulância é um reflexo dessas três palavras. Equipada com tecnologia de ponta e uma equipe altamente treinada, estamos sempre prontos para agir rapidamente e com eficácia em qualquer situação de emergência.</p>
+          </div></SwiperSlide>
+
+        <SwiperSlide style={{ background: "#BDE3FD" }}>
+          <div style={{ display: "flex", flexDirection: "column", width: "80%" }}>
+            <h1>Velocidade, Segurança, Cuidado:</h1>
+            <p style={{fontSize: "16px"}}>  Quando você vê nossa ambulância, você vê mais do que apenas um veículo. É um símbolo de velocidade, segurança e cuidado. Estamos comprometidos em chegar ao local rapidamente, garantindo a segurança
+            de nossos pacientes e fornecendo o mais alto nível de cuidado médico.</p>
+          
+          </div></SwiperSlide>
+
+        <SwiperSlide style={{ background: "#BDE3FD" }}>
+          <div style={{ display: "flex", flexDirection: "column", width: "80%" }}>
+          <h1>Resposta Imediata, Vidas Salvas:</h1>
+          <p style={{fontSize: "16px"}}>Cada segundo conta em uma emergência. Com nossa ambulância, garantimos uma resposta imediata. É essa prontidão que nos permite salvar vidas todos os dias.</p>
+          </div></SwiperSlide>
       </Swiper>
       <Swiper
         grabCursor={true}
@@ -161,6 +201,7 @@ export function Carrousel2() {
         className="mySwiper1"
       >
       </Swiper>
+     
     </>
   );
 }
@@ -181,7 +222,7 @@ const Container4 = () => {
               <Titulo style={{ color: "black", fontSize: "50px" }} isVisible={inView}> Porquê nossas ambulâncias !</Titulo>
             </ContainerT>
             <Carrousel2 />
-            <FaWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "200px", color: "green", }} />
+            <Container04></Container04>
 
             <ContainerAmbulance>
               <Container5></Container5>
@@ -204,7 +245,8 @@ const Container4 = () => {
           </ContainerLeft>
           <Container5 />
         </ContainerLR>
-        <FaWhatsapp href="https://react-icons.github.io/react-icons/search/#q=whats" style={{ width: "100px", height: "100px", color: "green", }} />
+        <Container04></Container04>
+
       </Container>
 
     }

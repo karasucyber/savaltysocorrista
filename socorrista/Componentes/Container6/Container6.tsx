@@ -7,7 +7,9 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
 
 
-
+const container2 = styled.div({
+     height: "100%"
+})
 
 const Container6 = () => {
     const { ref, inView } = useInView({ threshold: 0.6 });
@@ -18,7 +20,8 @@ const Container6 = () => {
                 <ContainerT>
             <h1 style={{fontSize: "60px"}}> Nossa galeria !</h1>
          </ContainerT>
-                <ContainerImg>
+            <Container2>
+            <ContainerImg>
                     <ContainerIMG1 src="2.jpeg" alt="" />
                     <ContainerIMG1 src="3.jpeg" alt="" />
                     <ContainerIMG1 src="4.jpeg" alt="" />
@@ -35,6 +38,7 @@ const Container6 = () => {
                     <ContainerIMG1 src="16.jpeg" alt="" />
                     <ContainerIMG1 src="17.jpeg" alt="" />
                 </ContainerImg>
+            </Container2>
             </Container2>
         </>
     );

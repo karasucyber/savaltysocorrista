@@ -164,14 +164,8 @@ const Container8 = () => {
     return (
         <Container ref={ref}>
             <ContainerLR ref={ref}>
-                <ContainerLeft>
-                    <ContainerCenterIMG >
-                        <img style={{ width: "400px", height: "400px" }} src="Logotipo_Saúde_e_Bem_Estar_Verde_Simples-removebg-preview.png"></img>
-                    </ContainerCenterIMG>
-                </ContainerLeft>
-                <ContainerRight>
+      
                     <Form></Form>
-                </ContainerRight>
             </ContainerLR>
             <ContainerCenter2 style={{ background: "white" }} >
                 <CiInstagram style={{ width: "70px", height: "70px" }} />

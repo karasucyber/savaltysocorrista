@@ -62,15 +62,25 @@ export function Carrousel() {
         modules={[EffectCreative]}
         className="mySwiper1"
       >
-        <SwiperSlide style={{ background: "black", }}>Slide 1</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 2</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 3</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 4</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 5</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 6</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 7</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 8</SwiperSlide>
-        <SwiperSlide style={{ background: "black" }}>Slide 9</SwiperSlide>
+        <SwiperSlide style={{ background: "black", }}>
+          <div style={{ display: "flex", flexDirection: "column",width: "80%"  }}>
+            <h1>Eficiência, Prontidão, Confiança:
+            </h1>
+            Nossa ambulância é um reflexo dessas três palavras. Equipada com tecnologia de ponta e uma equipe altamente treinada, estamos sempre prontos para agir rapidamente e com eficácia em qualquer situação de emergência.
+          </div></SwiperSlide>
+
+        <SwiperSlide style={{ background: "black" }}>
+          <div style={{ display: "flex", flexDirection: "column", width: "80%" }}>
+            <h1>Velocidade, Segurança, Cuidado:</h1>
+            Quando você vê nossa ambulância, você vê mais do que apenas um veículo. É um símbolo de velocidade, segurança e cuidado. Estamos comprometidos em chegar ao local rapidamente, garantindo a segurança
+            de nossos pacientes e fornecendo o mais alto nível de cuidado médico.
+          </div></SwiperSlide>
+
+        <SwiperSlide style={{ background: "black" }}>
+          <div style={{ display: "flex", flexDirection: "column", width: "80%" }}>
+            <h1>Resposta Imediata, Vidas Salvas:</h1>
+            Cada segundo conta em uma emergência. Com nossa ambulância, garantimos uma resposta imediata. É essa prontidão que nos permite salvar vidas todos os dias.
+          </div></SwiperSlide>
       </Swiper>
       <Swiper
         grabCursor={true}

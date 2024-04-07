@@ -185,7 +185,7 @@ export const Container2 = styled.div`
     align-items: center;
 
     @media only screen and (max-width: 780px) {
-        height: 1800px;
+        height: 2500px;
     }
 `;
 

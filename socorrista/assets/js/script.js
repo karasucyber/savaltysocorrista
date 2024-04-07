@@ -8,6 +8,7 @@ $(document).ready(function(){
         items: 1,
         autoplay: true,
         navText: ["<i class = 'fas fa-arrow-left'></i>", "<i class = 'fas fa-arrow-right'></i>"]
+   
     });
 
     // stop animation on resize
